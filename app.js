@@ -30,6 +30,7 @@ app.get('/about', function(req, res) {
 });
 
 app.post('/send',(req,res)=>{
+  console.log('THIS SHOWS THAT /send endpoint is processing now');
   const output =`
    <p>you have a new message</p>
       <h3>
@@ -40,17 +41,14 @@ app.post('/send',(req,res)=>{
        </ul>
       </h3>
   `;
-
-   
-
-var smtpTransport = require('nodemailer-smtp-transport');
-var transporter = nodemailer.createTransport(smtpTransport({
+// var smtpTransport = require('nodemailer-smtp-transport');
+var transporter = nodemailer.createTransport({
   service: 'gmail',
   auth: {
     user: 'ashutoshsenger09@gmail.com',
     pass: '09091998ashu'
   }
-}));
+});
 
 var mailOptions = {
   from: 'ashutoshsenger09@gmail.com',
@@ -64,7 +62,8 @@ transporter.sendMail(mailOptions, function(error, info){
   if (error){
     console.log(error);
   } else {
-     res.render('contact',{msg:'Email has been sent!!'});
+     // res.render('contact',{msg:'Email has been sent!!'});
+     res.redirect('/#contact-form');
   }
 });
 
