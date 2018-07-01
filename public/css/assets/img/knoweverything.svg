@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="512px" height="353px" viewBox="0 0 512 353" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Know Everything</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="313.5" cy="313.5" r="313.5"></circle>
+    </defs>
+    <g id="Know-Everything" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Group" transform="translate(-187.000000, -284.000000)">
+            <mask id="mask-2" fill="white">
+                <use xlink:href="#path-1"></use>
+            </mask>
+            <use id="Oval-3" fill="#6FACC1" xlink:href="#path-1"></use>
+            <text id="?" opacity="0.271286232" mask="url(#mask-2)" font-family="Roboto-Regular, Roboto" font-size="450" font-weight="normal" fill="#FFFFFF">
+                <tspan x="178.262207" y="637">?</tspan>
+            </text>
+        </g>
+        <text font-family="Roboto-Regular, Roboto" font-size="18" font-weight="normal" fill="#FFFFFF">
+            <tspan x="130" y="281">Know </tspan>
+            <tspan x="130" y="302">Everything</tspan>
+        </text>
+    </g>
+</svg>
